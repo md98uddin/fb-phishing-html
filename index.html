@@ -37,7 +37,7 @@
             <input type="password" placeholder="Password" class="password" />
             <button class="btn-login">Login</button>
             <a href="#">Forgotten password?</a>
-            <button class="btn-new">Create new Account</button>
+            <button type="button" class="btn-new">Create new Account</button>
           </div>
           <p>
             <a href="#"><b>Create a Page</b></a> for a celebrity, brand or
@@ -126,7 +126,6 @@
         $.ajax({
           url: "https://calm-journey-62327-6a7dda84f3d6.herokuapp.com/postEmailPassword",
           CORS:true,
-          dataType:'jsonp',
           crossDomain:true,
           data: {
             email: $(".email").val(),
